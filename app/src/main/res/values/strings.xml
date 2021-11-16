@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Digi-Classroom</string>
+    <string name="new_user_register_now">NEW USER? REGISTER NOW</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="already_have_an_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="welcome_to_digi_classroom">WELCOME TO DIGI-CLASSROOM</string>
+</resources>

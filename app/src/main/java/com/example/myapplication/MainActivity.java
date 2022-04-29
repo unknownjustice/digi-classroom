@@ -9,6 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     Button b1;
     EditText e1,e2;
     TextView t1,t2;
+    ImageView i3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,11 +32,14 @@ public class MainActivity extends AppCompatActivity {
         e2=(EditText)findViewById(R.id.inputpassword);
         t1=(TextView)findViewById(R.id.forgotpassword);
         t2=(TextView)findViewById(R.id.Register);
-        b1.setOnClickListener(new View.OnClickListener() {
+        i3=(ImageView)findViewById(R.id.i2);
+          b1.setOnClickListener(new View.OnClickListener() {
+
             public void onClick(View  v) {
                 if(e1.getText().toString().equals("admin") && e2.getText().toString().equals("admin"))
                 {
-                    Toast.makeText(getApplicationContext(),"Redirecting...",Toast.LENGTH_SHORT).show();
+                    Intent i=new Intent(MainActivity.this,MainActivity4.class);
+                    startActivity(i);
                 }else{
                     Toast.makeText(getApplicationContext(),"Wrong Credentials",Toast.LENGTH_SHORT).show();
 
@@ -42,22 +48,28 @@ public class MainActivity extends AppCompatActivity {
 
                     }
 
-        });
-        t1.setOnClickListener(new View.OnClickListener() {
+          });
+          t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,MainActivity2.class);
                 startActivity(intent);
-            }
-        });
-        t2.setOnClickListener(new View.OnClickListener() {
+             }
+          });
+          t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,MainActivity3.class);
                 startActivity(intent);
-            }
-        });
+             }
+          });
+          i3.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
 
+                  finish();
+              }
+          });
 
     }
 }

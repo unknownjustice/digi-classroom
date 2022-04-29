@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,7 +15,7 @@ import android.widget.TextView;
 public class WelcomeScreen extends AppCompatActivity {
  Animation textanim;
  TextView textv;
- private static int SPLASH_SCREEN = 5000;
+ private static int SPLASH_SCREEN = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

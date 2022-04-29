@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
+    package="com.google.mlkit.samples.vision.digitalink">
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:replace="android:appComponentFactory">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".StrokeManager"></activity>
+        <activity android:name=".StatusTextView" />
+        <activity android:name=".RecognitionTask" />
+        <activity android:name=".ModelManager" />
+        <activity android:name=".DrawingView" />
+        <activity android:name=".DigitalInkMainActivity" />
+        <activity android:name=".MainActivity4" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".WelcomeScreen">
